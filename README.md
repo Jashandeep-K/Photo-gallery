@@ -30,7 +30,7 @@ A responsive photo gallery web application built using HTML, CSS, and JavaScript
 ## Screenshots
 
 ### Start Screen
-![Start Screen](start_screen-interface.png)
+![Start Screen](start_screen_interface.png)
 
 ### Category Filter Feature
 ![Category Filter](category_feature.png)
