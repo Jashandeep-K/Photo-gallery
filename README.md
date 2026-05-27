@@ -27,3 +27,23 @@ A responsive photo gallery web application built using HTML, CSS, and JavaScript
 2. Open folder in VS Code
 3. Run "index.html" using Live Server
 
+## Screenshots
+
+### Start Screen
+![Start Screen](start_screen-interface.png)
+
+### Category Filter Feature
+![Category Filter](category_feature.png)
+
+### Custom Image Upload Feature
+![Custom Upload](custom_picture_add.png)
+
+### Favorite Feature
+![Favorite Feature](fav_feature.png)
+
+### Photo Viewing / Lightbox
+![Photo Viewing](photo_viewing.png)
+
+### Search Feature
+![Search Feature](search_feature.png)
+
