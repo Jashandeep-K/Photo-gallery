@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photo Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-top">
+      <div class="brand">✦ Jashan</div>
+      <button class="theme-btn" id="themeBtn">☽</button>
+    </div>
+    <h1 class="hero-title">Photo <em>Gallery</em></h1>
+    <p class="hero-sub">Explore Beautiful Moments</p>
+
+    <div class="search-wrap">
+      <input type="text" id="searchInput" placeholder="Search photos by title…" />
+      <span>⌕</span>
+    </div>
+  </header>
+
+  <div class="controls-bar">
+    <div class="filter-btns" id="filterBtns">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="nature">Nature</button>
+      <button class="filter-btn" data-filter="animals">Animals</button>
+      <button class="filter-btn" data-filter="people">People</button>
+      <button class="filter-btn fav-btn" data-filter="favorites">♥ Favorites</button>
+    </div>
+
+    <div class="controls-right">
+      <span id="photoCount">0 photos</span>
+      <select id="sortSelect">
+        <option value="newest">Newest First</option>
+        <option value="oldest">Oldest First</option>
+        <option value="az">A → Z</option>
+        <option value="za">Z → A</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="upload-section">
+    <button class="toggle-upload-btn" id="toggleUploadBtn">＋ Upload a Photo</button>
+
+    <div class="upload-box" id="uploadBox">
+
+      <div class="pick-image">
+        <input type="file" id="fileInput" accept="image/*" />
+        <label for="fileInput" class="file-label">
+          📁 Choose Image from Computer
+        </label>
+        <img id="previewImg" src="" alt="Preview" class="preview-img" />
+      </div>
+
+      <div class="upload-fields">
+        <label>Photo Title</label>
+        <input type="text" id="uploadTitle" placeholder="e.g. Sunset at Beach" maxlength="60" />
+
+        <label>Category</label>
+        <select id="catSelect">
+          <option value="">-- Select existing category --</option>
+          <option value="nature">Nature</option>
+          <option value="animals">Animals</option>
+          <option value="people">People</option>
+        </select>
+
+        <div class="or-divider">— or create a new category —</div>
+
+        <input type="text" id="newCatInput" placeholder="Type new category name…" maxlength="30" />
+
+        <button id="uploadBtn" class="upload-btn">Add to Gallery ✓</button>
+      </div>
+
+    </div>
+  </div>
+
+  <main class="gallery" id="gallery">
+  </main>
+
+  <div class="empty-msg" id="emptyMsg" style="display:none">
+    <p>😕 No photos found. Try a different search or filter.</p>
+  </div>
+
+  <button class="back-top" id="backTop">↑</button>
+
+  <div class="lightbox" id="lightbox" style="display:none">
+    <button class="lb-close" id="lbClose">✕</button>
+    <button class="lb-arrow lb-prev" id="lbPrev">‹</button>
+    <div class="lb-center">
+      <img id="lbImg" src="" alt="" />
+      <div class="lb-info">
+        <span id="lbTitle"></span>
+        <span class="lb-cat" id="lbCat"></span>
+        <a id="lbDownload" class="lb-dl" download>⬇ Download</a>
+      </div>
+    </div>
+    <button class="lb-arrow lb-next" id="lbNext">›</button>
+  </div>
+
+  <footer>
+    <p>✦ Jashan's Photo Gallery</p>
+    <p>Made by <strong>Jashandeep Kaur</strong>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
